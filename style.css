@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #cc89ca, #ffb1a6, #ffd7a4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  min-height: 100vh;
+}
+
+.container {
+  width: 300px;
+  background-color: #3f4d53;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 120px;
+  border-radius: 10px 10px 0 0;
+  background-color: #3f4d53;
+  border: none;
+  color: white;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: end;
+  padding: 30px 10px 0 0;
+  outline: none;
+}
+
+input[type="button"] {
+  padding: 20px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.buttons {
+  display: grid;
+  /* grid-template-columns: auto auto a; */
+}
+
+.signs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #d3dde5;
+}
+
+.signs > input[type="button"] {
+  background-color: #d3dde5;
+  border: 1px solid #3f4d53;
+}
+
+.other-signs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.equals {
+  display: grid;
+  grid-row: 1/5;
+  grid-column: 4;
+  border-radius: 0 0 10px 0;
+  border: 1px solid #3f4d53;
+  background-color: #ff7077
+  ;
+}
+
+.zero {
+  border-radius: 0 0 0 10px;
+  border: 1px solid #3f4d53;
+}

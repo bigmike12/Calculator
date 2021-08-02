@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="logic.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="screen">
+          <input type="text" name="screen" id="screen" disabled/>
+        </div>
+        <div class="buttons">
+          <div class="signs">
+            <input type="button" value="+" onclick="handleBtnClick('+')"  />
+            <input type="button" value="-" onclick="handleBtnClick('-')" />
+            <input type="button" value="x" onclick="handleBtnClick('*')"/>
+            <input type="button" value="/" onclick="handleBtnClick('/')"/>
+          </div>
+          <div class="other-signs">
+            <input type="button" value="7" onclick="handleBtnClick(7)" />
+            <input type="button" value="8" onclick="handleBtnClick(8)"  />
+            <input type="button" value="9" onclick="handleBtnClick(9)"  />
+            <input type="button" value="=" class="equals" onclick="handleEquals()" />
+            <input type="button" value="4" onclick="handleBtnClick(4)"  />
+            <input type="button" value="5" onclick="handleBtnClick(5)"  />
+            <input type="button" value="6" onclick="handleBtnClick(6)"  />
+            <input type="button" value="1" onclick="handleBtnClick(1)"  />
+            <input type="button" value="2" onclick="handleBtnClick(2)"  />
+            <input type="button" value="3" onclick="handleBtnClick(3)"  />
+            <input type="button" value="0" onclick="handleBtnClick(0)"  class="zero"/>
+            <input type="button" value="." onclick="handleBtnClick('.')" />
+            <input type="button" value="AC" onclick="screenClear()" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
